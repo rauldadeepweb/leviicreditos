@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="PT_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeviiCred | Crédito pessoal</title>
+    <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/a9e228_0b0da1346f474c979441e5453d5eb05c%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/a9e228_0b0da1346f474c979441e5453d5eb05c%7Emv2.png">
+    <script src="https://kit.fontawesome.com/8d45ecf6f3.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <!-- BARRA COM CONTATOS PRE HEADER/NAV -->
+        <div class="contactArea">
+            <div class="phoneArea">
+                <i class="fa-solid fa-phone"></i>
+                <div class="phoneNumber">(18) 9 97241101</div>
+            </div>
+            <div class="emailArea">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+                <a href="mailto:atendimento@levicred.com">
+                    <div class="emailAdress">atendimento@levicred.com</div>
+                </a>
+            </div>
+            <div class="instagramArea">
+                <a href="https://www.instagram.com/LEVICRED/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    <div class="instagramAdress">Levicred</div>
+                </a>
+            </div>
+            <div class="facebookArea">
+                <a href="https://www.facebook.com/levicredpromotora" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    <div class="instagramAdress">Levicred</div>
+                </a>
+            </div>
+            <div class="whatsappArea">
+                <a href="https://api.whatsapp.com/send?phone=5518997241101&text=Saber+Mais" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div class="instagramAdress">Nos mande uma mensagem!</div>
+                </a>
+            </div>
+        </div>
+        <!-- BARRA COM CONTATOS PRE HEADER/NAV -->
+
+        <!-- AREA NAVBAR -->
+        <div class="container headerArea" id="navbarID">
+            <a href="index.html">
+                <div class="logoArea"><span class="levi">Levii</span>Cred</div>
+            </a>
+            <i class="fa-solid fa-bars" id="menuHambur" onclick="openMenu()"></i>
+            <div class="navArea">
+                <nav id="navDesktop">
+                    <ul>
+                        <button id="contact" onclick="openModal()">Contato</button>
+                        <a href="register.html">
+                            <li>Cadastro</li>
+                        </a>
+                        <a href="#cartaoCredito">
+                            <li>Cartão de crédito</li>
+                        </a>
+                        <a href="#serviços">
+                            <li>Serviços</li>
+                        </a>
+                        <a href="#aboutUs">
+                            <li>Sobre nós</li>
+                        </a>
+                        <a href="#partner">
+                            <li>Seja parceiro</li>
+                        </a>
+                    </ul>
+                </nav>
+                <aside id="menuMobile">
+                    <nav id="navMobile">
+                        <ul>
+                            <button id="contact2" onclick="openModal()">Contato</button>
+                            <a href="register.html" onclick="closeMenu()">
+                                <li>Cadastro</li>
+                            </a>
+                            <a href="#cartaoCredito" onclick="closeMenu()">
+                                <li>Cartão de crédito</li>
+                            </a>
+                            <a href="#serviços" onclick="closeMenu()">
+                                <li>Serviços</li>
+                            </a>
+                            <a href="#aboutUs" onclick="closeMenu()">
+                                <li>Sobre nós</li>
+                            </a>
+                            <a href="#partner" onclick="closeMenu()">
+                                <li>Seja parceiro</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </div>
+        <!-- AREA NAVBAR -->
+    </header>
+    <main id="contentMaster">
+        <!-- BANNER TOP -->
+        <section class="bannerArea">
+            <div class="itemsBannerArea container">
+                <div class="descriptionArea">
+                    <h1 data-aos="fade-down" data-aos-delay="500" data-aos-duration="1100">Pare de sonhar e comece a<br><strong>realizar</strong></h1>
+                    <div class="description" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
+                        Viajar, deixar as contas em dia ou fazer uma reforma.
+                        Todo mundo tem um projeto que gostaria de fazer ou uma
+                        necessidade que precisa atender. Sabendo disso, oferecemos
+                        crédito pessoal com condições imperdíveis para você
+                        conquistar sua tranquilidade.
+                    </div>
+                    <a class="btn" href="#sectionForm">Clique aqui</a>
+                </div>
+            </div>
+        </section>
+        <!-- BANNER TOP -->
+
+        <!-- FORMULARIO PRINCIPAL -->
+        <section class="form" id="sectionForm">
+            <div class="titleDefault">
+                <div class="title2">Preencha o formulário e solicite seu empréstimo</div>
+                <div class="subTitle2">Nos informe seus dados que iremos retornar as melhores opções para você</div>
+            </div>
+            <form method="POST" action="https://formsubmit.co/leviicred@gmail.com" enctype="multipart/form-data">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/ok.html">
+            <div class="formArea container">
+                <div class="formAreaInfos form-group" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
+                        <div class="form-group" data-aos="fade-up-right">
+                            <label for="nameFull">Informe seu nome*</label>
+                            <input type="text" class="form-control" id="nameFull" name="nameFull"
+                                placeholder="Nome completo" required>
+                            <small id="emailHelp" class="form-text text-muted">Confira se o nome foi digitado
+                                corretamente.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="cpf">Informe seu CPF*</label>
+                            <input type="text" class="form-control" name="ao_cpf" id="cpf" onblur="validarCPF(this)"
+                                maxlength="11" placeholder="CPF" required>
+                            <small id="cpfHelp" class="form-text text-muted">Confira se o CPF foi digitado
+                                corretamente.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="adress">Informe seu endereço*</label>
+                            <input type="text" class="form-control" name="adress" id="adress" placeholder="Endereço"
+                                required>
+                            <small id="cpfHelp" class="form-text text-muted">Confira se o endereço foi digitado
+                                corretamente.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Informe seu telefone*</label>
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefone"
+                                required>
+                            <small id="cpfHelp" class="form-text text-muted">Confira se o telefone foi digitado
+                                corretamente.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Informe seu E-mail*</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail"
+                                autocomplete="off" required>
+                            <small id="cpfHelp" class="form-text text-muted">Confira se o e-mail foi digitado
+                                corretamente.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="valor">(Valor mínimo: R$500,00 | Valor máximo: R$50.000,00)*</label>
+                            <input type="text" class="form-control" name="valor" id="valor" onkeyup="formatarMoeda()"
+                                placeholder="Valor do empréstimo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hour">Qual melhor horário para você? </label>
+                            <select class="form-control" id="hour">
+                                <option></option>
+                                <option>Manhã</option>
+                                <option>Tarde</option>
+                                <option>Noite</option>
+                            </select>
+                        </div>
+                        <div class="buttonsForm">
+                            <button type="submit" class="btn">Solicitar</button>
+                            <a href="#" onclick="clearInput()">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- FORMULARIO PRINCIPAL -->
+
+        <!-- AREA SERVICOS/PRODUTOS -->
+        <section class="options" id="serviços">
+            <div class="titleDefault">
+                <div class="title1">Serviços</div>
+                <div class="subTitle1">Sua solução com apenas um clique</div>
+            </div>
+            <div class="optionsArea container">
+                <div class="moneyPersonal" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1100">
+                    <img src="assets/images/lampada.png" alt="money_icon">
+                    <h2>Empréstimo energia</h2>
+                    <div class="moneyPersonalDescription">
+                        Crédito rápido e fácil de R$ 200 á 1000 em 4h
+                        sem comprovação de renda.
+                        <span>Crédito para negativado</span>
+                    </div>
+                    <a href="energy.html" class="btn">Clique aqui</a>
+                </div>
+                <div class="line">.</div>
+                <div class="moneyPersonal" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
+                    <img src="assets/images/money2.png" alt="money_icon">
+                    <h2>Empréstimo pessoal</h2>
+                    <div class="moneyPersonalDescription">
+                        Crédito rápido e fácil em 24h
+                        com débito em conta.
+                        Valor mínimo de R$ 500,00 e máximo de R$ 120.000,00 mil.
+                    </div>
+                    <a href="register.html" class="btn">Clique aqui</a>
+                </div>
+                <div class="line">.</div>
+                <div class="moneyCompany" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1100">
+                    <img src="assets/images/icons8-moedas-96.png" alt="money_icon">
+                    <h2>Empréstimo consignado</h2>
+                    <div class="moneyCompanyDescription">
+                        Aposentados e pensionistas.
+                        Crédito em 24h
+                        sem comprovação de renda.
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=5518997241101&text=Saber+Mais" class="btn"
+                        target="_blank">Clique aqui</a>
+                </div>
+            </div>
+        </section>
+        <!-- AREA SERVICOS/PRODUTOS -->
+
+        <!-- AREA SOBRE NÓS -->
+        <section class="sobreNos" id="aboutUs">
+            <div class="titleDefault">
+                <div class="title2">Sobre a LeviCred</div>
+                <div class="subTitle2">Saiba um pouco mais sobre nós</div>
+            </div>
+            <div class="container mb-30">
+                <div class="sobreNosArea--text" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
+                    Atuamos como correspondente das maiores instituições financeiras do país, como principal segmento o
+                    crédito direto ao consumidor! Visando sempre o aprimoramento e transparência em todos os nossos
+                    produtos.
+                </div>
+                <div class="sobreNos--points" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
+                    <div class="bulletPoint"></div>
+                    <div class="bulletPointTexts">
+                        <h2 class="sobreNos--points--title">Empresa</h2>
+                        <div class="sobreNos--points--description">A LEVICRED foi fundada em Maio de 2018 no interior da
+                            Bahia, visando atender a carência da região á um bom e eficiente atendimento. Com um ano de
+                            existência a LEVICRED foi alcançando e desbravando novas fronteiras e hoje esta presente em
+                            muitas cidades baianas com parceiros e colaboradores espalhados por todo estado da Bahia.
+                        </div>
+                    </div>
+                </div>
+                <div class="sobreNos--points" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
+                    <div class="bulletPoint"></div>
+                    <div class="bulletPointTexts">
+                        <h2 class="sobreNos--points--title">Missão</h2>
+                        <div class="sobreNos--points--description">Ser uma empresa competitiva, inovadora e ousada que
+                            visa sempre o crescimento e bem-estar comum.</div>
+                    </div>
+                </div>
+                <div class="sobreNos--points" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
+                    <div class="bulletPoint"></div>
+                    <div class="bulletPointTexts">
+                        <h2 class="sobreNos--points--title">Visão</h2>
+                        <div class="sobreNos--points--description">Ser uma empresa competitiva, inovadora e ousada que
+                            visa sempre o crescimento e bem-estar comum.</div>
+                    </div>
+                </div>
+                <div class="sobreNos--points" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
+                    <div class="bulletPoint"></div>
+                    <div class="bulletPointTexts">
+                        <h2 class="sobreNos--points--title">Valores</h2>
+                        <div class="sobreNos--points--description">Compromisso, transparência, honestidade, ética e
+                            respeito são os pilares da nossa empresa!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- AREA SOBRE NÓS -->
+
+        <!-- AREA SEJA PARCEIRO -->
+        <section id="partner">
+            <div class="titleDefault">
+                <div class="title1">Seja parceiro(a)</div>
+                <div class="subTitle1">Venha fazer parte do nosso time!</div>
+            </div>
+            <div class="partnerArea container">
+                <div class="partnerArea--items">
+                    <div class="partnerArea--item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
+                        <i class="fa-solid fa-headset"></i>
+                        <div class="item--title">Suporte Pessoal</div>
+                        <div class="item--description">Nossos parceiros contam com um suporte mais que especial,
+                            operacional e financeiro.</div>
+                    </div>
+                    <div class="partnerArea--item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <div class="item--title">Melhores Comissões</div>
+                        <div class="item--description">Temos as mais agressivas condições do mercado, até 100% de alguns
+                            bancos.</div>
+                    </div>
+                    <div class="partnerArea--item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                        <div class="item--title">Pagamentos Diários</div>
+                        <div class="item--description">Todos os dias geramos relatórios, de segunda a sexta.</div>
+                    </div>
+                    <div class="partnerArea--item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
+                        <i class="fa-solid fa-user-clock"></i>
+                        <div class="item--title">Agilidade</div>
+                        <div class="item--description">Disponibilizamos um sistema único paras as digitações e gestão de
+                            contratos.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- AREA SEJA PARCEIRO -->
+
+    </main>
+    <!-- FOOTER AREA -->
+    <footer>
+        <div class="footerArea container">
+            <div class="footerArea--items">
+                <div class="logoArea"><span class="levi">Levii</span>Cred</div>
+                <div class="footerPhone">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="phoneNumber">(18) 9 97241101</div>
+                </div>
+                <div class="footerEmail">
+                    <i class="fa-solid fa-envelope-circle-check"></i>
+                    <a href="mailto:atendimento@levicred.com">
+                        <div class="emailAdress">atendimento@leviicred.com</div>
+                    </a>
+                </div>
+                <div class="instagramArea">
+                    <a href="https://www.instagram.com/LEVICRED/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <div class="instagramAdress">Leviicred</div>
+                    </a>
+                </div>
+                <div class="facebookArea">
+                    <a href="https://www.facebook.com/levicredpromotora" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        <div class="instagramAdress">Leviicred</div>
+                    </a>
+                </div>
+                <div class="whatsappArea">
+                    <a href="https://api.whatsapp.com/send?phone=5518997241101&text=Saber+Mais" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div class="instagramAdress">WhatsApp</div>
+                    </a>
+                </div>
+            </div>
+            <div class="footerArea--items">
+                <div class="letter">
+                    
+                    
+                </div>
+            </div>
+            <div class="footerArea--items linksArea">
+                <div class="links">
+                    <div class="linksTitle">Links úteis:</div>
+                    <ul>
+                        <a href="register.html">
+                            <i class="fa-solid fa-link"></i>
+                            <li>Cadastro</li>
+                        </a>
+                        <a href="#cartaoCredito">
+                            <i class="fa-solid fa-link"></i>
+                            <li>Cartão de crédito</li>
+                        </a>
+                        <a href="#serviços">
+                            <i class="fa-solid fa-link"></i>
+                            <li>Serviços</li>
+                        </a>
+                        <a href="#aboutUs">
+                            <i class="fa-solid fa-link"></i>
+                            <li>Sobre nós</li>
+                        </a>
+                        <a href="#partner">
+                            <i class="fa-solid fa-link"></i>
+                            <li>Seja parceiro</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">© 2022 LeviiCred. Todos os direitos reservados</div>
+    </footer>
+    <!-- FOOTER AREA -->
+    <!-- MODAL AREA  -->
+    <div id="modal">
+        <div class="modal--area efeito-vidro" id='areaModal' data-aos="fade-down" data-aos-delay="400">
+            <div class="contact--title">
+                Entre em contato conosco
+            </div>
+            <div class="contact--items">
+                <div class="phoneArea phoneNumber--contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="phoneNumber">(18) 9 97241101</div>
+                </div>
+                <div class="emailArea">
+                    <i class="fa-solid fa-envelope-circle-check"></i>
+                    <a href="mailto:atendimento@levicred.com">
+                        <div class="emailAdress">atendimento@levicred.com</div>
+                    </a>
+                </div>
+                <div class="instagramArea">
+                    <a href="https://www.instagram.com/LEVICRED/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <div class="instagramAdress">Leviicred</div>
+                    </a>
+                </div>
+                <div class="facebookArea">
+                    <a href="https://www.facebook.com/levicredpromotora" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        <div class="facebookAdress">Leviicred</div>
+                    </a>
+                </div>
+                <div class="whatsappArea">
+                    <a href="https://api.whatsapp.com/send?phone=5518997241101&text=Saber+Mais" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div class="whatsappAdress">Nos mande uma mensagem!</div>
+                    </a>
+                </div>
+            </div>
+            <div class="closeModal" id="btnCloseModal">
+                <img src="assets/images/close.png" class="closeModal" alt="fechar_contatos">
+            </div>
+        </div>
+    </div>
+    <div onclick="subirTela()" class="btnTop" id="btnSubirTela">
+        <img src="assets/images/seta-para-recolher.png" class="btnTopImg" alt="Voltar_ao_topo">
+    </div>
+    
+    <script src="assets/script/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
